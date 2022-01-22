@@ -36,6 +36,8 @@ const tabsFunc = () => {
     tabsPrice.textContent = `${tabsOptions[index].price}₽`;
     /* меняем изображение телефона по клику на таб */
     tabsImage.setAttribute("src", tabsOptions[index].image);
+    /* меняем Title у страницы */
+    document.title = `iPhone 13 Pro ${tabsOptions[index].memory}GB ${tabsOptions[index].name}`;
   };
 
   const changeActiveTabs = (indexClickedTab) => {
